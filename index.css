@@ -1,0 +1,134 @@
+@media only screen and (max-width: 600px) {
+  #hero {
+    display: flex;
+    flex-direction: column;
+  }
+  #achievements {
+    display: flex;
+    flex-direction: column;
+  }
+  #navMenu {
+    display: none;
+  }
+  #menu {
+    display: hidden;
+  }
+  #menu-btn {
+    display: block;
+  }
+  #footer {
+    flex-direction: column;
+  }
+  .item-one {
+    flex-direction: column;
+  }
+  .item-one > img {
+    width: 100%;
+  }
+
+  .item-two {
+    flex-direction: column-reverse;
+  }
+  .item-two > img {
+    width: 100%;
+  }
+
+  .item-three {
+    flex-direction: column;
+  }
+  .item-three > img {
+    width: 100%;
+    margin-top: 30px;
+  }
+  #item1 {
+    width: 100%;
+  }
+  #item2 {
+    width: 100%;
+  }
+  #item3 {
+    width: 100%;
+  }
+  #item4 {
+    width: 100%;
+  }
+  #item5 {
+    width: 100%;
+  }
+  .ready {
+    flex-direction: column;
+  }
+
+  body > div > section.px-5.py-10.relative.mt-10 > div > div.w-\[45\%\] > img {
+    margin-top: 20px;
+    width: 75%;
+    position: absolute;
+    top: 0;
+    right: 10;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .hero-container {
+    width: 50%;
+  }
+}
+/* Hamburger Menu */
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
+  left: 75px;
+}
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background: #000;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+.hamburger-middle {
+  transform: translateY(7px);
+}
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+
+.open {
+  transform: rotate(90deg);
+  transform: translateY(0px);
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translate(6px);
+}
+
+.open .hamburger-middle {
+  display: none;
+}
+
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+/* Animation */
+#desktop-nav {
+  animation: fadeDown 1000ms forwards;
+  opacity: 0;
+}
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
